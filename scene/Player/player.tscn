@@ -402,8 +402,8 @@ script = ExtResource("1_8uvvx")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_yem3p")
-animation = &"run"
-frame_progress = 0.980569
+animation = &"idle"
+frame_progress = 0.152999
 
 [node name="CollisionStand" type="CollisionShape2D" parent="."]
 visible = false
