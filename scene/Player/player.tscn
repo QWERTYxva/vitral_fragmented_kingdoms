@@ -1,12 +1,10 @@
-[gd_scene load_steps=64 format=3 uid="uid://d2uada60qiwjx"]
+[gd_scene load_steps=49 format=3 uid="uid://d2uada60qiwjx"]
 
 [ext_resource type="Script" uid="uid://b0s0mg5jki2ag" path="res://scene/Player/player.gd" id="1_8uvvx"]
 [ext_resource type="Texture2D" uid="uid://ciy7xhagag8p2" path="res://assets/SpriteSheets/Outlined_6_Cat_Dash-Sheet.png" id="2_41w3l"]
 [ext_resource type="Texture2D" uid="uid://bxcdpc7nmkhd" path="res://assets/SpriteSheets/Outlined_4_Cat_Fall-Sheet.png" id="3_co0lx"]
 [ext_resource type="Texture2D" uid="uid://xb2yqtbehn10" path="res://assets/SpriteSheets/Outlined_1_Cat_Idle-Sheet.png" id="4_kidpo"]
 [ext_resource type="Texture2D" uid="uid://6xklscjnlyfk" path="res://assets/SpriteSheets/Outlined_3_Cat_Jump-Sheet.png" id="5_rvfjl"]
-[ext_resource type="Texture2D" uid="uid://b16aa4q1c272j" path="res://assets/SpriteSheets/Outlined_8_Cat_Ledge_Grab_Idle-Sheet.png" id="6_i0aa2"]
-[ext_resource type="Texture2D" uid="uid://ctp4wao3qmo8c" path="res://assets/SpriteSheets/Outlined_7_Cat_Ledge_Grab_Land-Sheet.png" id="7_sqcmh"]
 [ext_resource type="Texture2D" uid="uid://c3scge182qobq" path="res://assets/SpriteSheets/Outlined_2_Cat_Run-Sheet.png" id="8_d52sb"]
 [ext_resource type="Texture2D" uid="uid://dkgpmgwxg1cs6" path="res://assets/SpriteSheets/Outlined_5_Cat_Wall_Slide-Sheet.png" id="9_38fwo"]
 
@@ -90,54 +88,6 @@ region = Rect2(64, 0, 32, 32)
 atlas = ExtResource("5_rvfjl")
 region = Rect2(96, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_khis8"]
-atlas = ExtResource("6_i0aa2")
-region = Rect2(0, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_b88wv"]
-atlas = ExtResource("6_i0aa2")
-region = Rect2(32, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_pgbbb"]
-atlas = ExtResource("6_i0aa2")
-region = Rect2(64, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_331ug"]
-atlas = ExtResource("6_i0aa2")
-region = Rect2(96, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ny14h"]
-atlas = ExtResource("6_i0aa2")
-region = Rect2(128, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ibah8"]
-atlas = ExtResource("6_i0aa2")
-region = Rect2(160, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_3iwfv"]
-atlas = ExtResource("6_i0aa2")
-region = Rect2(192, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_qwsg1"]
-atlas = ExtResource("6_i0aa2")
-region = Rect2(224, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1xqrm"]
-atlas = ExtResource("7_sqcmh")
-region = Rect2(0, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_bfour"]
-atlas = ExtResource("7_sqcmh")
-region = Rect2(32, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_8gr2b"]
-atlas = ExtResource("7_sqcmh")
-region = Rect2(64, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_vl8ci"]
-atlas = ExtResource("7_sqcmh")
-region = Rect2(96, 0, 32, 32)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_ieltc"]
 atlas = ExtResource("8_d52sb")
 region = Rect2(0, 0, 32, 32)
@@ -211,7 +161,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"dash",
-"speed": 10.0
+"speed": 8.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -228,7 +178,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"fall",
-"speed": 10.0
+"speed": 8.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -257,7 +207,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
-"speed": 10.0
+"speed": 8.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -274,53 +224,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"jump",
-"speed": 10.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_khis8")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_b88wv")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_pgbbb")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_331ug")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ny14h")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ibah8")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_3iwfv")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_qwsg1")
-}],
-"loop": true,
-"name": &"ledgegrab",
-"speed": 10.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1xqrm")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bfour")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_8gr2b")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_vl8ci")
-}],
-"loop": true,
-"name": &"ledgeup",
-"speed": 10.0
+"speed": 8.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -355,7 +259,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"run",
-"speed": 10.0
+"speed": 8.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -372,29 +276,26 @@ animations = [{
 }],
 "loop": true,
 "name": &"wallslide",
-"speed": 10.0
+"speed": 8.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b26j0"]
-size = Vector2(13, 19)
+size = Vector2(9, 16)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i0aa2"]
-size = Vector2(16, 15)
+size = Vector2(13, 12)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8uvvx"]
-size = Vector2(14, 18)
+size = Vector2(10, 16)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_41w3l"]
-size = Vector2(11, 18)
+size = Vector2(9, 15)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_co0lx"]
-size = Vector2(13, 20)
+size = Vector2(8, 17)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kidpo"]
-size = Vector2(14, 19)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_rvfjl"]
-size = Vector2(9, 18)
+size = Vector2(10, 19)
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_8uvvx")
@@ -403,31 +304,30 @@ script = ExtResource("1_8uvvx")
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_yem3p")
 animation = &"idle"
-frame_progress = 0.152999
+frame_progress = 0.686666
 
 [node name="CollisionStand" type="CollisionShape2D" parent="."]
-visible = false
-position = Vector2(-1, 2.5)
+position = Vector2(-0.5, 4)
 shape = SubResource("RectangleShape2D_b26j0")
 
 [node name="CollisionRun" type="CollisionShape2D" parent="."]
 visible = false
-position = Vector2(1, 4.5)
+position = Vector2(0.5, 6)
 shape = SubResource("RectangleShape2D_i0aa2")
 
 [node name="CollisionDash" type="CollisionShape2D" parent="."]
 visible = false
-position = Vector2(0, 4)
+position = Vector2(0, 5)
 shape = SubResource("RectangleShape2D_8uvvx")
 
 [node name="CollisionJump" type="CollisionShape2D" parent="."]
 visible = false
-position = Vector2(-0.5, 3)
+position = Vector2(-0.5, 3.5)
 shape = SubResource("RectangleShape2D_41w3l")
 
 [node name="CollisionFall" type="CollisionShape2D" parent="."]
 visible = false
-position = Vector2(-0.5, 2)
+position = Vector2(0, 3.5)
 shape = SubResource("RectangleShape2D_co0lx")
 
 [node name="CollisionWallSlide" type="CollisionShape2D" parent="."]
@@ -436,17 +336,10 @@ position = Vector2(4, 2.5)
 shape = SubResource("RectangleShape2D_kidpo")
 one_way_collision_margin = 0.0
 
-[node name="CollisionLedge" type="CollisionShape2D" parent="."]
-visible = false
-position = Vector2(-0.5, 2)
-shape = SubResource("RectangleShape2D_rvfjl")
-
 [node name="DashTimer" type="Timer" parent="."]
+wait_time = 0.15
 one_shot = true
 
-[node name="CoyoteTimer" type="Timer" parent="."]
-one_shot = true
-
-[node name="LedgeDetector" type="RayCast2D" parent="."]
+[node name="DoubleDashCooldownTimer" type="Timer" parent="."]
 
 [connection signal="timeout" from="DashTimer" to="." method="_on_dash_timer_timeout"]
