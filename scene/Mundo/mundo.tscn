@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bgddmxlxdpjt3"]
+[gd_scene load_steps=6 format=3 uid="uid://bgddmxlxdpjt3"]
 
 [ext_resource type="Texture2D" uid="uid://b2jtawy4e4y7v" path="res://assets/Tilemap/monochrome_tilemap_packed.png" id="1_3soql"]
 [ext_resource type="PackedScene" uid="uid://d2uada60qiwjx" path="res://scene/Player/player.tscn" id="3_g7e1b"]
+[ext_resource type="PackedScene" uid="uid://dqyh6mdv13cub" path="res://scene/Items/item_doble_dash.tscn" id="3_rw41s"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lgngo"]
 texture = ExtResource("1_3soql")
@@ -431,3 +432,6 @@ layer_0/tile_data = PackedInt32Array(0, 1114113, 17, 1, 1179649, 17, 2, 1179649,
 
 [node name="Player" parent="." instance=ExtResource("3_g7e1b")]
 position = Vector2(26, 131)
+
+[node name="ItemDobleDash" parent="." instance=ExtResource("3_rw41s")]
+position = Vector2(204, 128)

@@ -297,16 +297,17 @@ size = Vector2(8, 17)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kidpo"]
 size = Vector2(10, 19)
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
 script = ExtResource("1_8uvvx")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_yem3p")
-animation = &"idle"
-frame_progress = 0.686666
+animation = &"wallslide"
+frame_progress = 0.95995
 
 [node name="CollisionStand" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(-0.5, 4)
 shape = SubResource("RectangleShape2D_b26j0")
 

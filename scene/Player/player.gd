@@ -20,7 +20,7 @@ const AIR_CONTROL: float = 0.2
 const MAX_JUMPS: int = 1
 
 # --- VARIABLES DE FÍSICA ---
-var gravity: float = 800
+var gravity: float = 900
 
 # --- VARIABLES DE ESTADO Y BUFFS ---
 var has_dash: bool = true
